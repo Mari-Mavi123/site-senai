@@ -163,13 +163,11 @@ footer{
     background-color: rgb(20, 53, 114);
 }
 
+.btncarrinho{
+    border-radius: 1px;
+
+}
 #carrinho{
     width: 20px;
     height: 20px;
-
-}
-.btncarrinho{
-    justify-content: end;
-    border-radius: 1px;
-
 }
