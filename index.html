@@ -9,24 +9,32 @@
 <body>
     <header>
         <img  id="logo" src="img/c341044352f54fe6ac71a95744473e62.png">
-        <nav>
-            <ul>
-                <li><a class="link" href="#inicio">Início</a></li>
-                <li><a class="link" href="#produtos">Produtos</a></li>
-                <li><a class="link" href="#sobre">Sobre Nós</a></li>
-                <li><a class="link" href="#contato">Contato</a></li>
-                <li class="dropdown.">
-                    <a href="js/script.js" class="dropbtn">Produtos</a>
-                    <div class="dropdown">
-                      <a href="#">Disel</a>
-                      <a href="#">Prada</a>
-                      <a href="#">Tiffany</a>
-                      <a href="#">Nike</a>
-
-                    </div>
-                  </li>
-            </ul>
-        </nav>
+        <button class="btncarrinho"><img src="https://cdn-icons-png.flaticon.com/512/6644/6644893.png" id="carrinho"></button>
+            <div class="dropdown">
+                <button class="dropbtn" id="btn">Marca</button>
+                <div id="dropdown-content" class="dropdown-content">
+                    <a href="#">Diesel</a>
+                    <a href="#">Tiffany</a>
+                    <a href="#">Prada</a>
+                    <a href="#">Nike</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="btn">Produtos</button>
+                <div id="dropdown-content" class="dropdown-content">
+                    <a href="#">Roupa</a>
+                    <a href="#">Sapato</a>
+                    <a href="#">Acessório</a>
+                    <a href="#">Bolsa</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#sobrenos"><button class="dropbtn" id="btn">Sobre nós</button></a>
+                <div id="dropdown-content" class="dropdown-content">
+                </div>
+            </div>
+            <script src="script.js"></script>
+       
     </header>
 
     <section class="products">
@@ -44,7 +52,7 @@
         </div>
         <div class="product">
             <img src="https://www.promoview.com.br/images/2020/07/16/1%20T%C3%8ANIS%20DA%20NIKE%20E%20DIOR%201.jpg " alt="Produto 3">
-            <h3>Tênis Nike Air Jordan 1 Retro Low Dior - Christian Dior</h3>
+            <h3>Tênis Nike Air Jordan 1 Retro high Dior - Christian Dior</h3>
             <p class="price">R$30.000,00</p>
             <button class="add-to-cart">Adicionar ao Carrinho</button>
         </div>
@@ -62,7 +70,7 @@
             <div class="about-image">
             </div>
             <div class="about-content">
-                <h2>Sobre Nós</h2>
+                <h2 id="sobrenos">Sobre Nós</h2>
                 <p class="txt">Nossa loja é apaixonada por oferecer produtos de alta qualidade que combinam estilo e conforto. Desde a nossa fundação, estamos comprometidos em trazer as últimas tendências da moda para os nossos clientes.</p>
                 <p class="txt">Com uma equipe de designers talentosos e materiais premium, garantimos que cada peça que você encontra em nossa loja seja única e durável. Nossa missão é ajudar você a expressar sua individualidade através da moda.</p>
             </div>
