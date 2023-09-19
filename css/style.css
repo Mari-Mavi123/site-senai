@@ -11,12 +11,69 @@ header {
     padding: 20px;
     text-align: center;
     max-height: 20vh;
+    width: 100vw;
 }
 
-header h1 {
+#headercarrinho{
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+#cart-tab {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#cart-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#cart {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 300px;
+}
+
+#cart h2 {
     margin: 0;
 }
 
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#cart-count {
+    background-color: #f00;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btnMenu{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+}
 
 nav ul {
     list-style: none;
@@ -33,7 +90,12 @@ nav a {
     color: #fff;
 }
 
-
+.frameCarrinho{
+    visibility: hidden;
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 5vh;
+}
 
 .products {
     display: flex;
@@ -66,7 +128,8 @@ nav a {
     color: #163780;
     border-radius: 25px;
     border: 2px solid #163780;
-    padding: 5px 10px;
+    padding: 5px 
+    ;
     cursor: pointer;
     transition: background-color 0.3s;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -119,7 +182,7 @@ footer{
 
 .dropdown {
     position:relative;
-    display: inline-block;    
+    display: inline-block;  
 }
 
 .dropbtn{
@@ -164,10 +227,15 @@ footer{
 }
 
 .btncarrinho{
+    padding: 0;
+    margin: 0;
+    height: 50px;
     border-radius: 1px;
 
 }
 #carrinho{
-    width: 20px;
-    height: 20px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
 }
+

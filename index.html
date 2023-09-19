@@ -7,11 +7,14 @@
     <title>Minha Loja Online</title>
 </head>
 <body>
+    <div id="iframe" class="frameCarrinho">
+        <iframe src="./carrinho.html" frameborder="0" width="400px" height="400px"></iframe>
+    </div>
     <header>
         <img  id="logo" src="img/c341044352f54fe6ac71a95744473e62.png">
-        <button class="btncarrinho"><img src="https://cdn-icons-png.flaticon.com/512/6644/6644893.png" id="carrinho"></button>
+        <div class="btnMenu">            
             <div class="dropdown">
-                <button class="dropbtn" id="btn">Marca</button>
+                <button class="dropbtn" id="btn">produtos</button>
                 <div id="dropdown-content" class="dropdown-content">
                     <a href="#">Diesel</a>
                     <a href="#">Tiffany</a>
@@ -20,7 +23,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn" id="btn">Produtos</button>
+                <button class="dropbtn" id="btn">Marcas</button>
                 <div id="dropdown-content" class="dropdown-content">
                     <a href="#">Roupa</a>
                     <a href="#">Sapato</a>
@@ -29,13 +32,18 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a href="#sobrenos"><button class="dropbtn" id="btn">Sobre nós</button></a>
-                <div id="dropdown-content" class="dropdown-content">
-                </div>
+                <a href="#sobrenos"><button class="dropbtn" id="btn">Sobre nós </button></a>
+                <div id="dropdown-content" class="dropdown-content"></div>
             </div>
-            <script src="script.js"></script>
-       
+            <div class="dropdown">
+                <button class="btncarrinho">
+                    <img  src="https://cdn-icons-png.flaticon.com/512/6644/6644893.png" id="carrinho">
+                </button>
+            </div>
+        </div>
     </header>
+        
+        
 
     <section class="products">
         <div class="product">
@@ -79,9 +87,7 @@
         <p>&copy; 2023 Minha Loja. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
-
-
+    <script src="./js/script.js"></script>
 
 </body>
 </html>

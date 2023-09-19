@@ -1,5 +1,5 @@
 // Captura o botão e o conteúdo do dropdown
-var dropdownBtn = document.getElementById("dropdown-btn");
+/*var dropdownBtn = document.getElementById("dropdown-btn");
 var dropdownContent = document.getElementById("dropdown-content");
 
 // Adiciona um evento de clique ao botão para alternar a visibilidade do dropdown
@@ -16,4 +16,17 @@ window.addEventListener("click", function(event) {
     if (!event.target.matches("#dropdown-btn")) {
         dropdownContent.style.display = "none";
     }
-});
+});*/
+
+var iframe = document.getElementById("iframe");
+var carrinho = document.getElementById("carrinho");
+
+carrinho.addEventListener("click",abrirCarrinho);
+
+function abrirCarrinho(){
+    if(iframe.style.visibility == "hidden"){
+        iframe.style.visibility = "visible"
+    }else{
+        iframe.style.visibility = "hidden"
+    }
+}
